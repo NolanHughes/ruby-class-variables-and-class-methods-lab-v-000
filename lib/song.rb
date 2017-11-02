@@ -35,5 +35,8 @@ class Song
     @@genres.group_by{ |v| v }.map{ |k, v| [k, v.size] }.to_h
   end
 
-end
+  def self.artists_count
+    @@artists.group_by{ |v| v }.map{ |k, v| [k, v.size] }.to_h
+  end
 
+end
