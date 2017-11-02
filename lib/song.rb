@@ -37,7 +37,7 @@ class Song
     #   number_of_times << @@genres_array.count(type)
     #   @@genres_count[type] = count #count var
     # end
-    [@@genres.group_by{ |v| v }.map{ |k, v| [k, v.size] }].to_h
+    @@genres.group_by{ |v| v }.map{ |k, v| [k, v.size] }.to_h
   end
 
 end
