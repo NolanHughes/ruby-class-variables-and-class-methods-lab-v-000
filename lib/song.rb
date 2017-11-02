@@ -37,10 +37,6 @@ class Song
       number_of_times << @@genres_array.count(type)
       @@genres_count[type] = count #count var
     end
-
-    # @@genres.each do | v |
-    #   @@genre_count.store(v, @@genre_count[v]+1)
-    # end
   end
 
 end
