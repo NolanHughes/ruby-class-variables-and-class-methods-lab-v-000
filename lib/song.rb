@@ -5,7 +5,7 @@ class Song
     @name = song_name
     @artist = artist
     @genre = genre
-    
+
     @@count += 1
     @@artists << artist
     @@genres << genre
@@ -27,8 +27,7 @@ class Song
   end
 
   def self.genres
-    if 
-    @@genres
+    @@genres.uniq
   end
 
 end
