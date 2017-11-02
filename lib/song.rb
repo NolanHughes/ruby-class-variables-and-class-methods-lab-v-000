@@ -17,7 +17,7 @@ class Song
   @@count = 0
   @@artists = []
   @@genres_array = []
-  @@genre_count = Hash.new(0)
+  @@genre_count = {Hash.new(0)}
 
   def self.count
     @@count
