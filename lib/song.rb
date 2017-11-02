@@ -7,7 +7,11 @@ class Song
     @genre = genre
     @@count += 1
     @@artists << artist
-    @@genres << genre
+
+
+    unless @@genres.inlcude?(genre) 
+      @@genres << genre
+    end
   end
 
 
