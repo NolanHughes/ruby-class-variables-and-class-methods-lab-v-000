@@ -34,7 +34,7 @@ class Song
   def self.genre_count
     @@genres_array.each do |type|
 
-      @@genre_count[type] = count
+      @@genres_count[type] = count #count var
     end
 
     # @@genres.each do | v |
@@ -46,6 +46,8 @@ end
 
 ary = [1, 2, 2, 2, 2, 4, 4, 3]
 
-ary.collect do |num|
-  ary.count(num)
+@@genres_array = ["rap", "rap", pop]
+
+@@genres_array.collect do |num|
+  @@genres_array.count(num)
 end
