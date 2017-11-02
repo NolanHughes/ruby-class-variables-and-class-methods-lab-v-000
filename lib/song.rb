@@ -11,7 +11,7 @@ class Song
     unless @@genres.inlcude?(genre)
       @@genres << genre
     end
-    
+
   end
 
 
