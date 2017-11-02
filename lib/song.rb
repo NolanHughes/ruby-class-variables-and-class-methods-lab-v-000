@@ -8,7 +8,7 @@ class Song
 
     @@count += 1
     @@artists << artist
-    @@genres_array << genre
+    @@genre << genre
 
   end
 
@@ -16,7 +16,7 @@ class Song
 
   @@count = 0
   @@artists = []
-  @@genres_array = []
+  @@genres = []
   @@genres_count = {}
 
   def self.count
@@ -28,7 +28,7 @@ class Song
   end
 
   def self.genres
-    @@genres_array.uniq
+    @@genres.uniq
   end
 
   def self.genre_count
@@ -37,7 +37,7 @@ class Song
     #   number_of_times << @@genres_array.count(type)
     #   @@genres_count[type] = count #count var
     # end
-    Hash[*data.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
+    Hash[*@@genres.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
   end
 
 end
