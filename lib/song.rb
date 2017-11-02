@@ -17,6 +17,7 @@ class Song
   @@count = 0
   @@artists = []
   @@genres = []
+  @@genre_count = {}
 
   def self.count
     @@count
@@ -28,6 +29,12 @@ class Song
 
   def self.genres
     @@genres.uniq
+  end
+
+  def self.genre_count
+    @@genres.each do ||
+      if 
+    end
   end
 
 end
