@@ -45,8 +45,7 @@ class Song
 
 end
 
-ary = [1, 2, 2, 2, 2, 4, 4, 3]
-
+###Work code###
 genres_array = ["rap", "rap", "pop"]
 number_of_times = []
 
