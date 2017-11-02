@@ -9,7 +9,13 @@ class Song
     @@artist << artist
   end
 
+
+
   @@count = 0
   @@artist = []
+
+  def self.count
+    @@count
+  end
 
 end
