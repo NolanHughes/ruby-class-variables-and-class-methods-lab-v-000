@@ -5,12 +5,10 @@ class Song
     @name = song_name
     @artist = artist
     @genre = genre
+    
     @@count += 1
     @@artists << artist
-
-    # unless @@genres.include?("#{genre}")
-      @@genres << genre
-    # end
+    @@genres << genre
 
   end
 
@@ -29,6 +27,7 @@ class Song
   end
 
   def self.genres
+    if 
     @@genres
   end
 
