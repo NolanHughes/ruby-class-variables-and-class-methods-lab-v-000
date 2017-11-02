@@ -7,12 +7,14 @@ class Song
     @genre = genre
     @@count += 1
     @@artists << artist
+    @@grenes << genre
   end
 
 
 
   @@count = 0
   @@artists = []
+  @@genres = []
 
   def self.count
     @@count
@@ -20,6 +22,10 @@ class Song
 
   def self.artists
     @@artists
+  end
+
+  def self.genres
+    @@genres
   end
 
 end
