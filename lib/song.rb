@@ -37,16 +37,16 @@ class Song
       @@genre_count.store(v, @@genre_count[v]+1)
     end
     #
-    
+
     @@genres.each do |type|
-      
+
       @@genre_count[type] = count
     end
   end
 
 end
 
-ary = [1, 2, 4, 2]
+ary = [1, 2, 2, 2, 2, 4, 4, 3]
 
 ary.collect do |num|
   ary.count(num)
