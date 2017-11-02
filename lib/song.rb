@@ -8,7 +8,7 @@ class Song
 
     @@count += 1
     @@artists << artist
-    @@genres << genre
+    @@genres_array << genre
 
   end
 
@@ -16,7 +16,7 @@ class Song
 
   @@count = 0
   @@artists = []
-  @@genres = []
+  @@genres_array = []
   @@genre_count = Hash.new(0)
 
   def self.count
@@ -32,16 +32,14 @@ class Song
   end
 
   def self.genre_count
-
-    @@genres.each do | v |
-      @@genre_count.store(v, @@genre_count[v]+1)
-    end
-    #
-
-    @@genres.each do |type|
+    @@genres_array.each do |type|
 
       @@genre_count[type] = count
     end
+
+    # @@genres.each do | v |
+    #   @@genre_count.store(v, @@genre_count[v]+1)
+    # end
   end
 
 end
