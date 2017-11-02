@@ -52,3 +52,5 @@ number_of_times = []
 genres_array.collect do |num|
   number_of_times << genres_array.count(num)
 end
+
+number_of_times
