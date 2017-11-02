@@ -50,3 +50,8 @@ genres_array.each do |type|
 end
 
 number_of_times
+
+trial_hash = {}
+data = [0,1,2,2,2,2,2,3,3,3,3,3,3,4,4,4,4,5,5,6,6,6,7,7,7,7,7,8,9,9,10]
+Hash[*data.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
+
