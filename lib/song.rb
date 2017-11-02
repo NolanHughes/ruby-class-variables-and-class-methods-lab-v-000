@@ -9,5 +9,6 @@ class Song
   end
 
   @@count = 0
+  @@artist = []
 
 end
