@@ -33,7 +33,7 @@ class Song
 
   def self.genre_count
 
-    @@genre.each do | v |
+    @@genres.each do | v |
       @@genres_count.store(v, h[v]+1)
     end
     # 
