@@ -46,7 +46,7 @@ end
 
 ary = [1, 2, 2, 2, 2, 4, 4, 3]
 
-@@genres_array = ["rap", "rap", pop]
+@@genres_array = ["rap", "rap", "pop"]
 
 @@genres_array.collect do |num|
   @@genres_array.count(num)
