@@ -36,7 +36,7 @@ class Song
     @@genres.each do | v |
       @@genres_count.store(v, h[v]+1)
     end
-    # 
+    #
     # @@genres.each do |type|
     #   @@genre_count[type] = count
     # end
